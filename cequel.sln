@@ -5,8 +5,6 @@ VisualStudioVersion = 17.5.33502.453
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "cequel", "cequel\cequel.vcxproj", "{7E211C1A-AFE0-4246-91EB-B15F842A8524}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "tests", "tests\tests.vcxproj", "{B3938D4A-DE49-44A2-87EE-FDEDAD87F7E3}"
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -23,14 +21,6 @@ Global
 		{7E211C1A-AFE0-4246-91EB-B15F842A8524}.Release|x64.Build.0 = Release|x64
 		{7E211C1A-AFE0-4246-91EB-B15F842A8524}.Release|x86.ActiveCfg = Release|Win32
 		{7E211C1A-AFE0-4246-91EB-B15F842A8524}.Release|x86.Build.0 = Release|Win32
-		{B3938D4A-DE49-44A2-87EE-FDEDAD87F7E3}.Debug|x64.ActiveCfg = Debug|x64
-		{B3938D4A-DE49-44A2-87EE-FDEDAD87F7E3}.Debug|x64.Build.0 = Debug|x64
-		{B3938D4A-DE49-44A2-87EE-FDEDAD87F7E3}.Debug|x86.ActiveCfg = Debug|Win32
-		{B3938D4A-DE49-44A2-87EE-FDEDAD87F7E3}.Debug|x86.Build.0 = Debug|Win32
-		{B3938D4A-DE49-44A2-87EE-FDEDAD87F7E3}.Release|x64.ActiveCfg = Release|x64
-		{B3938D4A-DE49-44A2-87EE-FDEDAD87F7E3}.Release|x64.Build.0 = Release|x64
-		{B3938D4A-DE49-44A2-87EE-FDEDAD87F7E3}.Release|x86.ActiveCfg = Release|Win32
-		{B3938D4A-DE49-44A2-87EE-FDEDAD87F7E3}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
