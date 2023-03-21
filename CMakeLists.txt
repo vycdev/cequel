@@ -13,3 +13,7 @@ project ("cequel")
 
 # Include sub-projects.
 add_subdirectory ("cequel")
+
+# Enable testing
+enable_testing()
+add_subdirectory ("cequel-tests")
