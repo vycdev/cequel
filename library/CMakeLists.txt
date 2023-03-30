@@ -4,7 +4,7 @@ project(cequel-library)
 file(GLOB_RECURSE libcequel-sources CONFIGURE_DEPENDS "${CMAKE_CURRENT_LIST_DIR}/sources/cequel/*.cpp")
 set(libcequel-include "${CMAKE_CURRENT_LIST_DIR}/include/")
 
-add_library(libcequel)
+add_library(libcequel include/lexer/tokens.h include/lexer/lexer.h sources/lexer/lexer.cpp)
 target_compile_features(libcequel PUBLIC cxx_std_20)
 target_sources(libcequel PRIVATE ${libcequel-sources})
 set_target_properties(libcequel PROPERTIES PREFIX "" IMPORT_PREFIX "")
