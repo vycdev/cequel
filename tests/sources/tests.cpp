@@ -8,3 +8,7 @@ TEST_CASE( "Factorials are computed", "[factorial]" ) {
     REQUIRE( Factorial(3) == 6 );
     REQUIRE( Factorial(10) == 3628800 );
 }
+
+TEST_CASE("TEST", "[factorial]") {
+    REQUIRE(1 == 2);
+}
