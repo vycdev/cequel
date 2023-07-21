@@ -1,18 +1,22 @@
 #pragma once
 
 #include <string>
+#include <vector>
 
 namespace Lexer {
     enum TokenType {
-        // Single-character tokens.
+        // Atoms
         LEFT_PAREN, RIGHT_PAREN, LEFT_BRACE, RIGHT_BRACE,
-        COMMA, DOT, MINUS, PLUS, COLON, SEMICOLON, SLASH, STAR, PERCENT,
+        COMMA, DOT, MINUS, PLUS, COLON, SEMICOLON, SLASH, BACKSLASH, STAR, PERCENT,
+        BANG, EQUAL, GREATER, LESS,
+        QUOTE, DIGIT, CHAR,
+        AT,
 
-        // One or two character tokens.
-        BANG, BANG_EQUAL,
-        EQUAL, EQUAL_EQUAL,
-        GREATER, GREATER_EQUAL,
-        LESS, LESS_EQUAL,
+        // Logical
+        BANG_EQUAL,
+        EQUAL_EQUAL,
+        GREATER_EQUAL,
+        LESS_EQUAL,
         AND, OR,
 
         // Literals.
@@ -24,14 +28,19 @@ namespace Lexer {
         FN, RETURN,
         TRUE, FALSE, NIL,
 
-        // Standard library
-        PRINT,
-
+        // Special
+        COMMENT,
+        SKIP,
+        END_OF_LINE,
         END_OF_FILE
     };
 
     struct Token {
         TokenType type;
         std::string_view lexeme;
+        std::uint32_t line_no;
     };
+
+    TokenType GetAtomType(std::string::iterator it);
+    std::vector<Token> Tokenize(std::string input);
 }
