@@ -41,6 +41,6 @@ namespace Lexer {
         std::uint32_t line_no;
     };
 
-    TokenType GetAtomType(std::string::iterator it);
+    TokenType GetAtomType(const std::string::iterator& it);
     std::vector<Token> Tokenize(std::string input);
 }
